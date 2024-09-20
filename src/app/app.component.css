@@ -1,0 +1,12 @@
+.car-item {
+    @apply items-center text-center;
+    display: grid;
+    grid-template-columns: 150px minmax(100px, 1fr) minmax(100px, 1fr) 120px 200px
+}
+.rotate {
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
